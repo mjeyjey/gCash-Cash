@@ -1,0 +1,15 @@
+<form action="/settings/rename" method="post">
+    <label>New Username:</label>
+    <input type="text" name="newUsername" required>
+    <button type="submit">Update Username</button>
+
+    <!-- <label>New Password:</label>
+    <input type="text" name="newUsername" required>
+    <button type="submit">Update Password</button> -->
+
+    <a href="/dashboard" style="display: inline-block; padding: 10px 16px; background-color: #0b5ed7; color: white; text-decoration: none; border-radius: 5px; font-weight: bold;">← Back to Home</a>
+
+</form>
+
+<p th:if="${error}" th:text="${error}" style="color:red;"></p>
+<p th:if="${success}" th:text="${success}" style="color:green;"></p>

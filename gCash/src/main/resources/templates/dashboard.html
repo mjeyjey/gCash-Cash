@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard</title>
+</head>
+<body>
+
+    <div th:replace="~{fragments/navbar :: navbar}"></div>
+
+    <h2>Welcome to GcashMOD, <span th:text="${user.username}"></span>!</h2>
+    <h3>Your Current Balance: ₱<span th:text="${balance}"></span></h3>
+
+    <p>Select a Transaction:</p>
+    <ul>
+        <li><a href="deposit">Deposit</a></li>
+        <li><a href="withdraw">Withdraw</a></li>
+        <li><a href="cashin">Cash In</a></li>
+        <li><a href="send">Transfer</a></li>
+        <li><span style="color: grey;">Bank Transfer (coming soon)</span></li>
+    </ul>
+
+</body>
+</html>

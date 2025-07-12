@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Transaction History</title>
+</head>
+<body>
+<div th:replace="~{fragments/navbar :: navbar}"></div>
+<h3>Transaction History</h3>
+<ul>
+    <li th:each="log : ${transaction}" th:text="${log}">No history yet.</li>
+</ul>
+    <a href="/dashboard" style="display: inline-block; padding: 10px 16px; background-color: #0b5ed7; color: white; text-decoration: none; border-radius: 5px; font-weight: bold;">← Back to Home</a>
+
+</body>
+</html>
